@@ -177,7 +177,7 @@
 		var mc_passed = false;
 
 		// if c_obj is not specified, then nothing to do here
-		if (typeof c_obj == 'string') {
+		if (typeof c_obj == 'string' || c_obj instanceof jQuery) {
 			// check for new & valid options
 			c_settings = $.extend({}, $.fn.NobleCount.settings, options);
 
